@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="left">
+    <div class="head">
+      <search (filterEvent)="filterEvent($event)"></search>
+      <button (click)="openNew()">NEW +</button>
+    </div>
+    <div class="content">
+      <user-list [list]="displayedList" (itemClickEvent)="itemClicked($event)"></user-list>
+    </div>
+  </div>
+  <div class="right">
+    <user-card 
+      *ngIf="currentItem" 
+      [item]="currentItem"
+      [isEdit]="isEditMode"
+      (formSubmitted)="getFormEvent($event)">
+    </user-card>
+  </div>
+</div>

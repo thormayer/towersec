@@ -1,0 +1,22 @@
+
+@import './shared/styles/shared-style.scss';
+.container{
+    .header{
+        .top-nav{
+            @include towersec-bg;
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            
+            .logo{
+                margin-right: 2rem;
+                font-weight: bold;
+            }
+            .list-container{
+                .list-item{
+                    
+                }
+            }
+        }
+    }
+}

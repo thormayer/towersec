@@ -1,0 +1,22 @@
+.container{
+    padding: 1rem;
+    box-shadow: 2px 2px 10px #888888;
+    .title{
+
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            margin: 0.5rem;
+        }
+
+        ul{
+            li{
+                padding: 0.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    }
+}

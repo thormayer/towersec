@@ -1,0 +1,25 @@
+<div class="container" *ngIf="!isEdit">
+  <div class="title">
+    Add New User
+  </div>
+  <form [formGroup]="userForm">
+    <div class="form">
+      <input type="text" formControlName="firstName" placeholder="first Name">
+      <input type="text" formControlName="lastName" placeholder="last Name">
+      <input type="text" formControlName="email" placeholder="email">
+    </div>
+    <button (click)="submitClicked()">Add</button>
+  </form>
+</div>
+
+<div class="container" *ngIf="isEdit">
+  <div class="title"> Editing {{item.first_name}}</div>
+  <div class="form">
+    <ul>
+      <li>{{item.first_name}}</li>
+      <li>{{item.last_name}}</li>
+      <li>{{item.email}}</li>
+
+    </ul>
+  </div>
+</div>

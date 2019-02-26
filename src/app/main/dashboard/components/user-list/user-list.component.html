@@ -1,0 +1,6 @@
+<div class="container" >
+  <ng-container *ngFor="let item of list">
+    <user-list-item [item]="item" (click)="itemClicked(item)" ></user-list-item>
+    <div class="line"></div>
+  </ng-container>
+</div>

@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    .field{
+        text-align: start;
+        padding: 0.5rem;
+    }
+}
